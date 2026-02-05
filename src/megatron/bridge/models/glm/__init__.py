@@ -18,6 +18,11 @@ from megatron.bridge.models.glm.glm45_provider import (
     GLM45ModelProvider355B,
     GLMMoEModelProvider,
 )
+from megatron.bridge.models.glm.glm47_flash_bridge import GLM47FlashBridge
+from megatron.bridge.models.glm.glm47_flash_provider import (
+    GLM47FlashModelProvider,
+    GLM47FlashProvider,
+)
 
 
 __all__ = [
@@ -25,4 +30,7 @@ __all__ = [
     "GLM45ModelProvider355B",
     "GLM45AirModelProvider106B",
     "GLM45Bridge",
+    "GLM47FlashBridge",
+    "GLM47FlashModelProvider",
+    "GLM47FlashProvider",
 ]
