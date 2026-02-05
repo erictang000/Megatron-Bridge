@@ -21,6 +21,8 @@ from megatron.bridge.models.deepseek.deepseek_provider import (
     DeepSeekV2Provider,
     DeepSeekV3ModelProvider,
     DeepSeekV3Provider,
+    GLM47FlashModelProvider,
+    GLM47FlashProvider,
     MoonlightModelProvider16B,
     MoonlightProvider,
 )
@@ -33,10 +35,12 @@ __all__ = [
     "DeepSeekV2LiteModelProvider",
     "DeepSeekV2ModelProvider",
     "DeepSeekV3ModelProvider",
+    "GLM47FlashModelProvider",
     "MoonlightModelProvider16B",
     "DeepSeekProvider",
     "DeepSeekV2LiteProvider",
     "DeepSeekV2Provider",
     "DeepSeekV3Provider",
+    "GLM47FlashProvider",
     "MoonlightProvider",
 ]
