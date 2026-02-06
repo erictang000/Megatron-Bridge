@@ -67,6 +67,7 @@ class GLM47FlashBridge(MegatronModelBridge):
         provider.gated_linear_unit = True
         provider.position_embedding_type = "rope"
         provider.add_bias_linear = False
+        provider.add_qkv_bias = True  # GLM 4.7-Flash uses bias on QKV projections (HF attention_bias=False is misleading)
         provider.share_embeddings_and_output_weights = False
         provider.qk_layernorm = True
         provider.multi_latent_attention = True
